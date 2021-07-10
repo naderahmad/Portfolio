@@ -1,0 +1,242 @@
+@use '../variables' as v;
+
+.hero {
+  width: 100vw;
+  height: calc(100vh - 7rem);
+  z-index: 1;
+  &__content {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    top: 30vh;
+    padding: 0 2rem;
+    text-align: center;
+    z-index: 1;
+    @include v.breakpoint(medium) {
+      text-align: left;
+      padding: 0 7rem;
+    }
+    @include v.breakpoint(large) {
+      padding: 0 168px;
+      top: 35vh;
+    }
+    .hero__title {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero__p1 {
+      display: block;
+      font-weight: 500;
+      font-size: clamp(2rem, 3vw, 3.6rem);
+      line-height: 1.5;
+
+      body.dark-theme & {
+        color: v.$just-white;
+      }
+    }
+    .hero__h1 {
+      display: block;
+      font-size: clamp(3.6rem, 3vw, 6.4rem);
+      line-height: 1.5;
+
+      body.dark-theme & {
+        color: v.$just-white;
+      }
+    }
+    .hero__text {
+      position: relative;
+      width: max-content;
+      font-weight: 300;
+      font-size: clamp(2rem, 3vw, 6.4rem);
+      line-height: 1.5;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+
+      body.dark-theme & {
+        color: v.$just-white;
+      }
+      @include v.breakpoint(medium) {
+        margin: 0 0 4rem;
+      }
+    }
+    .hero__p2 {
+      position: relative;
+      width: max-content;
+      font-weight: lighter;
+      font-size: clamp(2rem, 3vw, 6.4rem);
+      line-height: 1.5;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+      @include v.breakpoint(medium) {
+        margin: 0 0 4rem 0;
+      }
+    }
+  }
+  &__content-footer {
+    margin-top: 4rem;
+    @include v.breakpoint(medium) {
+      @include v.flexbox(flex-start, center, nowrap);
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    @include v.breakpoint(medium) {
+      padding: 0 0 0 2rem;
+    }
+  }
+  &__icon {
+    color: v.$color-p;
+    font-size: 3rem;
+    cursor: pointer;
+
+    body.dark-theme & {
+      color: v.$light-grey;
+    }
+    &:hover {
+      color: v.$color-p;
+      transition: all 0.3s ease;
+      transform: scale(1.2);
+      body.dark-theme & {
+        color: v.$color-s;
+      }
+    }
+  }
+  &__bg {
+    position: relative;
+    filter: blur(80px);
+    z-index: -1;
+  }
+  .circle1 {
+    display: none;
+    position: absolute;
+    mix-blend-mode: overlay;
+    width: 20rem;
+    height: 20rem;
+    top: -2vh;
+    left: 60%;
+    background-color: #04acbfc0;
+    border-radius: 50rem;
+    animation: blob 5s linear infinite alternate;
+    @include v.breakpoint(medium) {
+      display: block;
+    }
+    @include v.breakpoint(large) {
+      width: 20rem;
+      height: 20rem;
+      top: -2vh;
+      left: 60%;
+    }
+  }
+  .circle2 {
+    display: none;
+    position: absolute;
+    mix-blend-mode: overlay;
+    width: 20rem;
+    height: 20rem;
+    top: 4vh;
+    left: 80%;
+    background-color: #f2055cb0;
+    border-radius: 50rem;
+    animation: blob 7s linear infinite alternate;
+    @include v.breakpoint(medium) {
+      display: block;
+    }
+    @include v.breakpoint(large) {
+      width: 20rem;
+      height: 20rem;
+      top: -2vh;
+      left: 75%;
+    }
+  }
+  .circle3 {
+    display: none;
+    position: absolute;
+    mix-blend-mode: overlay;
+    width: 20rem;
+    height: 20rem;
+    top: 20vh;
+    left: 75%;
+    background-color: #9c22ffb4;
+    border-radius: 50rem;
+    animation: blob 3s linear infinite alternate;
+    @include v.breakpoint(medium) {
+      display: block;
+    }
+    @include v.breakpoint(large) {
+      width: 20rem;
+      height: 20rem;
+      top: 20vh;
+      left: 70%;
+    }
+  }
+  // Animations KeyFrames
+  @keyframes blob {
+    0% {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0px) scale3d(2, 2, 2) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+  }
+  @keyframes blobtwo {
+    0% {
+      transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+    100% {
+      transform: translate3d(0px, 0px, 0px) scale3d(2, 2, 2) rotateX(0deg)
+        rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+}
+.scroll span {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid v.$color-p;
+  border-bottom: 1px solid v.$color-p;
+  transform: rotate(-45deg);
+  animation: scroll 1.5s infinite;
+  body.dark-theme & {
+    border-left: 1px solid v.$light-grey;
+    border-bottom: 1px solid v.$light-grey;
+  }
+}
+@keyframes scroll {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+.cursor {
+  $color: v.$color-p;
+  
+  body.dark-theme & {
+    color: v.$just-white;
+  }
+}

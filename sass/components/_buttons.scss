@@ -1,0 +1,30 @@
+@use '../variables' as v;
+
+.btn {
+    display: inline-block;
+    background-color: v.$color-p;
+    border: none;
+    font-family: v.$font-p;
+    max-width: 20rem;
+    min-width: 18rem;
+    height: 5rem;
+    font-size: v.$p;
+    color: v.$just-white;
+    padding: 1.2rem 4rem;
+    cursor: pointer;
+    transition: ease 0.2s;
+    outline: none;
+    &:hover {
+        font-weight: 400;
+        transform: scale(1.05);
+
+        body.dark-theme & {
+            background-color: v.$color-s;
+        }
+    }
+
+    body.dark-theme & {
+        background-color: v.$light-grey;
+        color: v.$color-p;
+    }
+}

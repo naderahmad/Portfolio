@@ -1,0 +1,110 @@
+@use '../variables' as v;
+
+.contact {
+    padding: 5rem 2rem 0 2rem;
+    @include v.breakpoint(large) {
+        padding: 15rem 2rem 0 2rem;
+        margin: 0 auto;
+        max-width: 120rem;
+    }
+    &__container {
+        text-align: center;
+        padding: 0 2rem;
+        @include v.breakpoint(small) {
+            padding: 6rem 3rem;
+            border: 1px solid v.$color-p;
+
+            body.dark-theme & {
+                border: 1px solid v.$color-s;
+            }
+        }
+        @include v.breakpoint(large) {
+            display: flex;
+            justify-content: space-around;
+            padding: 8rem 6rem 6rem;
+        }
+    }
+    &__title {
+        font-size: v.$subtitle-h2;
+        padding-bottom: 2rem;
+        max-width: 40rem;
+        margin: 0 auto;
+        line-height: 1.4;
+        border-bottom: 1px solid v.$color-p;
+        body.dark-theme & {
+            color: v.$just-white;
+            border-bottom: 1px solid v.$light-grey;
+        }
+        @include v.breakpoint(small) {
+            padding-bottom: 4rem;
+        }
+        @include v.breakpoint(large) {
+            font-size: v.$title-h1;
+            font-weight: 500;
+            text-align: left;
+            margin: 0;
+            margin-top: 1rem;
+            padding: 0;
+            letter-spacing: .1rem;
+        }
+    }
+    &__form {
+        text-align: left;
+        @include v.breakpoint(large) {
+            width: 50%;
+        }
+    }
+    &__label {
+        display: block;
+        font-size: 1.6rem;
+        margin-bottom: .5rem;
+        body.dark-theme & {
+            color: v.$light-grey;
+        }
+    }
+    &__input {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 1.8rem;
+        padding: 0 1.5rem;
+        background-color: v.$light-grey;
+        border: none;
+        &::placeholder {
+            font-family: v.$font-p;
+            font-size: 1.6rem;
+            font-weight: 300;
+        }
+    }
+    &__input--textarea {
+        height: 16rem;
+        padding: 1.5rem 2rem;
+    }
+    &__btn {
+        text-align: center;
+    }
+    &__socials {
+        display: flex;
+        width: 20rem;
+        justify-content: space-around;
+        margin: 0 auto;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        @include v.breakpoint(large) {
+            padding-top: 3rem;
+            margin: 0;
+        }
+    }
+    &__icon {
+        font-size: 3rem;
+        color: v.$color-p;
+        body.dark-theme & {
+            color: v.$light-grey;
+        }
+        &:hover {
+            color: v.$color-s;
+            transform: scale(1.3);
+            transition: .3s ease all;
+        }
+    }
+}

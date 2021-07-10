@@ -1,0 +1,36 @@
+@use '../variables' as v;
+
+.footer {
+    background-color: v.$light-grey;
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 4rem 2rem;
+    body.dark-theme & {
+        background-color: v.$color-p;
+    }
+    &__p {
+        font-size: 1.4rem;
+        font-weight: 300;
+        margin-top: 2.5rem;
+        body.dark-theme & {
+            color: v.$just-white;
+        }
+    }
+    &__links {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1.5rem auto 0 auto;
+        max-width: 30rem;
+    }
+    &__item {
+        color: v.$color-s;
+        font-size: 1.5rem;
+        font-weight: 500;
+        body.dark-theme & {
+            color: v.$light-grey;
+        }
+    }
+}

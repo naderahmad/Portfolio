@@ -1,0 +1,48 @@
+// Colors
+$color-p: #1d1d1f;
+$color-s: #888888;
+$light-grey: #f3f3f3;
+$just-white: #fff;
+
+// fonts
+$font-p: "Poppins", sans-serif;
+
+// Typewriter
+$typewriterSpeed: 3s;
+$typewriterCharacters: 40;
+
+// Font-size
+$title-h1: 6.4rem;
+$title-span: 3.2rem;
+$subtitle-h2: 4.4rem;
+$p-light: 2rem;
+$p: 1.6rem;
+$p-link: 1.5rem;
+
+//Animations
+$bar-delay: 7s;
+
+// MIXINS
+
+// BreakPoints
+$breakpoints: (
+  small: 499px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+
+  @media screen and (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+// Flex Box
+@mixin flexbox($justify, $align, $wrap) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
