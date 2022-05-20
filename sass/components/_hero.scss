@@ -1,63 +1,11 @@
 @use '../variables' as v;
-@use "sass:math";
 
-.shapes {
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.shape {
-  will-change: transform;
-  position: absolute;
-  border-radius: 50%;
-  
-  $shapes: (#005ffe: 650px, #ffe5e3: 440px, #ffcc57: 270px);
-  
-  @each $color, $size in $shapes {
-    &.shape-#{index($shapes, ($color $size))} {
-      background: $color;
-      width: $size;
-      height: $size;
-      margin: math.div(-$size, 2) 0 0 math.div(-$size, 2);
-    }
-  }
-}
-
-.content {
-
-  position: absolute;
-  display: flex;
-
-  
-}
-
-
-
-
-.cursor {
-  position: fixed;
-  background: #2128bd;
-  width: 20px;
-  height: 20px;
-  margin: -10px 0 0 -10px;
-  border-radius: 50%;
-  will-change: transform;
-  user-select: none;
-  pointer-events: none;
-  z-index: 10000;
-}
-
-::selection {
-  color: #fff;
-  background: #2128bd;
-}
 .hero {
   width: 100vw;
   height: calc(100vh - 7rem);
   z-index: 1;
   &__content {
+    position: relative;
     width: 100%;
     min-width: 320px;
     top: 30vh;
@@ -75,8 +23,7 @@
     .hero__title {
       position: relative;
       overflow: hidden;
-      background: #fff;
-  mix-blend-mode: screen;
+      mix-blend-mode: screen;
     }
     .hero__p1 {
       display: block;
