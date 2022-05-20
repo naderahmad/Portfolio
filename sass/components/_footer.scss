@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 .footer {
-    background-color: v.$light-grey;
+    background-color: v.$color-t;
     margin-top: 5rem;
     width: 100%;
     height: auto;
@@ -30,7 +30,7 @@
         font-size: 1.5rem;
         font-weight: 500;
         body.dark-theme & {
-            color: v.$light-grey;
+            color: v.$color-t;
         }
     }
 }

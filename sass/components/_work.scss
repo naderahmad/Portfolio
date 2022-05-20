@@ -28,7 +28,7 @@
         }
 
         body.dark-theme & {
-            color: v.$light-grey;
+            color: v.$color-t;
         }
     }
     &__box {
@@ -40,11 +40,11 @@
         height: .4vw;
         z-index: -1;
         body.dark-theme & {
-            background-color: v.$light-grey;
+            background-color: v.$color-t;
         }
     }
     .card {
-        background-color: v.$light-grey;
+        background-color: v.$color-t;
         margin: 0 auto 3rem auto;
         max-width: 750px;
         min-width: 300px;
@@ -87,7 +87,7 @@
             margin: 0 auto 3rem auto;
 
             body.dark-theme & {
-                color: v.$light-grey;
+                color: v.$color-t;
             }
         }
     }

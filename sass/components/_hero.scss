@@ -93,7 +93,7 @@
     cursor: pointer;
 
     body.dark-theme & {
-      color: v.$light-grey;
+      color: v.$color-t;
     }
     &:hover {
       color: v.$color-p;
@@ -216,8 +216,8 @@
   transform: rotate(-45deg);
   animation: scroll 1.5s infinite;
   body.dark-theme & {
-    border-left: 1px solid v.$light-grey;
-    border-bottom: 1px solid v.$light-grey;
+    border-left: 1px solid v.$color-t;
+    border-bottom: 1px solid v.$color-t;
   }
 }
 @keyframes scroll {

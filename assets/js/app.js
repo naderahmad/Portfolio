@@ -11,13 +11,11 @@ let menuOpen = false;
 menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
-    menuBg.classList.add('is-active');
-    document.body.style.overflowY = 'hidden';
+    menuBg.classList.add('is-active');;
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
     menuBg.classList.remove('is-active');
-    document.body.style.overflowY = 'visible';
     menuOpen = false;
   }
 });
@@ -156,3 +154,7 @@ words.forEach(word => {
     let tl9 = gsap.timeline({repeat: 0, yoyo: false, repeatDelay: 0, delay: 1})
     tl9.to('.hero__text', {duration: 2, text: word})
 })
+
+$('.menu').click (function(){
+  $(this).toggleClass('open');
+});

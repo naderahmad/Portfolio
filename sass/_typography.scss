@@ -1,0 +1,23 @@
+@use './variables' as v;
+h1,
+h2,
+h3 {
+  font-family: v.$font;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  font-family: v.$font;
+  font-size: v.$p;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a, 
+a::after,
+a::before {
+    color: inherit;
+    text-decoration: none;
+}

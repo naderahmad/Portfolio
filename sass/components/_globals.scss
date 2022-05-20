@@ -6,7 +6,7 @@
   margin: 0;
 }
 html {
-  font-family: v.$font-p;
+  font-family: v.$font;
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
@@ -20,13 +20,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-p {
-  font-size: 1.8rem;
-}
-a {
-  text-decoration: none;
-  font-size: 1.8rem;
-}
+
 .strong {
   font-weight: 700;
 }

@@ -1,11 +1,11 @@
 // Colors
-$color-p: #1d1d1f;
-$color-s: #888888;
-$light-grey: #f3f3f3;
-$just-white: #fff;
+$color-p: rgb(29, 29, 31);
+$color-s: rgb(136, 136, 136);
+$color-t: rgb(243, 243, 243);
+$just-white: rgb(255, 255, 255);
 
 // fonts
-$font-p: "Poppins", sans-serif;
+$font: "Poppins", sans-serif;
 
 // Typewriter
 $typewriterSpeed: 3s;
@@ -26,10 +26,9 @@ $bar-delay: 7s;
 
 // BreakPoints
 $breakpoints: (
-  small: 499px,
-  medium: 768px,
-  large: 992px,
-  xlarge: 1200px,
+  medium: 700px,
+  large: 1023px,
+  xlarge: 1440px,
 );
 
 @mixin breakpoint($size) {

@@ -13,38 +13,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nader Ahmad - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
-    <header class="header animate__animated animate__backInDown">
+    <header class="header">
       <nav class="navbar">
         <div class="navbar__logo">
           <div class="navbar__img"></div>
-          <a href="#" class="navbar__text">Nader Ahmad</a>
+          <a href="#start" class="navbar__text">Nader Ahmad</a>
         </div>
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a class="navbar__link underline" href="#about">Acerca de mi</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link underline" href="#work">Portafolio</a>
-          </li>
-          <li class="navbar__item">
-            <a class="navbar__link underline" href="#contact">Contacto</a>
-          </li>
-        </ul>
+        <div class="navbar__mobile">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link underline" href="#start">Inicio</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link underline" href="#about">Acerca de mi</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link underline" href="#work">Portafolio</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link underline" href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        
         <div class="navbar__last">
           <ul class="navbar__language">
             <li class="language__item">
@@ -64,26 +61,10 @@
           <div class="navbar__burger"></div>
         </div>
       </nav>
-      <nav class="navbar__mobile">
-        <a class="mobile__link" href="#about">Acerca de mi</a>
-        <a class="mobile__link" href="#work">Portafolio</a>
-        <a class="mobile__link" href="#contact">Contacto</a>
-        <div class="mobile__last">
-          <a href="#" class="mobile__link mobile__link--margin ">ENG</a>
-          <div class="mobile__separator"></div>
-          <a href="#" class="mobile__link mobile__link--margin strong">ESP</a>
-        </div>
-        <div class="mobile__switch">
-          <button class="switch--mobile" id="switch--mobile">
-            <span class="switch__icon"><i class="fas fa-sun"></i></span>
-            <span class="switch__icon"><i class="fas fa-moon"></i></span>
-          </button>
-        </div>
-      </nav>
     </header>
     <main class="main">
       <!-- Start Hero Section -->
-      <section class="hero">
+      <section id="start" class="hero">
         <div class="hero__content animate__animated animate__bounceInLeft">
           <h1 class="hero__title">
             <span class="hero__p1">Hola, me llamo</span>
@@ -93,7 +74,7 @@
           </h1>
           <div class="hero__content-footer">
             <a href="#contact" class="btn"
-              ><span class="btn__text">Contactame</span></a
+              ><span class="btn__text">Contáctame</span></a
             >
             <div class="hero__social">
               <a
@@ -137,8 +118,7 @@
           <p
             class="about__p"
           >
-          🖖🏻 Hola, me llamo Nader. Soy <strong>Ingeniero en Informática</strong> y desarrollador <strong>Front End</strong> 💻. Mi pasión me motiva a nunca dejar de aprender
-          y resolver problemas.          
+          🖖🏻 Bienvenido. Soy <strong>Frontend Developer</strong> e <strong>Ingeniero en informática</strong> 💻. Mi pasión es crear y desarrollar         
           </p>
           <div
             class="about__btn"
@@ -181,9 +161,9 @@
 			<div class="card card-1">
 				<img src="./assets/images/doge-view.png" alt="screenshot website dogecoin" class="card__img">
 				<div class="card__content">
-					<h2 class="card__title">Dogecoin <br><span class="card__span">Landing Page</span></h2>
-					<p class="card__p">Diseño y desarrollo del sitio web de la criptomoneda Dogecoin, para el repositorio oficial en GitHub.</p>
-					<a href="https://naderahmad.github.io/Dogecoin-web/" target="_blank" rel="noopener" class="btn">Visualizar</a>
+					<h2 class="card__title">Astra Group<br><span class="card__span">One Page</span></h2>
+					<p class="card__p">Diseño y desarrollo de web oficial para empresa chilena ASTRA Group.</p>
+					<a href="https://astragroup.cl" target="_blank" rel="noopener" class="btn">Visitar</a>
 				</div>
 			</div>
 			<!-- Card 02 -->

@@ -33,7 +33,7 @@
         border-bottom: 1px solid v.$color-p;
         body.dark-theme & {
             color: v.$just-white;
-            border-bottom: 1px solid v.$light-grey;
+            border-bottom: 1px solid v.$color-t;
         }
         @include v.breakpoint(small) {
             padding-bottom: 4rem;
@@ -59,7 +59,7 @@
         font-size: 1.6rem;
         margin-bottom: .5rem;
         body.dark-theme & {
-            color: v.$light-grey;
+            color: v.$color-t;
         }
     }
     &__input {
@@ -67,10 +67,10 @@
         height: 5rem;
         margin-bottom: 1.8rem;
         padding: 0 1.5rem;
-        background-color: v.$light-grey;
+        background-color: v.$color-t;
         border: none;
         &::placeholder {
-            font-family: v.$font-p;
+            font-family: v.$font;
             font-size: 1.6rem;
             font-weight: 300;
         }
@@ -99,7 +99,7 @@
         font-size: 3rem;
         color: v.$color-p;
         body.dark-theme & {
-            color: v.$light-grey;
+            color: v.$color-t;
         }
         &:hover {
             color: v.$color-s;

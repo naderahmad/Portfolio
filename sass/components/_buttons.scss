@@ -4,7 +4,7 @@
     display: inline-block;
     background-color: v.$color-p;
     border: none;
-    font-family: v.$font-p;
+    font-family: v.$font;
     max-width: 20rem;
     min-width: 18rem;
     height: 5rem;
@@ -24,7 +24,7 @@
     }
 
     body.dark-theme & {
-        background-color: v.$light-grey;
+        background-color: v.$color-t;
         color: v.$color-p;
     }
 }
