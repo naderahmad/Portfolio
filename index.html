@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
+<!--
 
     “The design is not just what it looks like and feels like. 
     The design is how it works” 
@@ -8,243 +8,233 @@
     — Steve Jobs.
 
   -->
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nader Ahmad - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./sass/main.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <div class="navbar__img"></div>
-          <a href="#start" class="navbar__text">Nader Ahmad</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nader Ahmad - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/042a86ec10.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./dist/main.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <!-- Start logo -->
+      <div class="navbar__logo">
+        <div class="navbar__img"></div>
+        <a href="#start" class="navbar__text">Nader Ahmad</a>
+      </div>
+      <!-- End logo -->
+      <!-- Start Navbar List -->
+      <ul class="navbar__list">
+        <li class="navbar__item">
+          <a class="navbar__link underline" href="#about">Acerca de mi</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link underline" href="#work">Portafolio</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link underline" href="#contact">Contacto</a>
+        </li>
+      </ul>
+      <!-- End Navbar List -->
+      <!-- Start last navbar section -->
+      <div class="navbar__last">
+        <ul class="navbar__language">
+          <li class="language__item">
+            <a href="#" class="navbar__link underline">EN</a>
+          </li>
+          <div class="language__separator"></div>
+          <li class="language__item language__item--light">
+            <a href="#" class="navbar__link strong underline">ES</a>
+          </li>
+        </ul>
+        <!-- Start switch darkmode -->
+        <button class="switch" id="switch">
+          <span><i class="fas fa-sun"></i></span>
+          <span><i class="fas fa-moon"></i></span>
+        </button>
+        <!-- End switch darkmode -->
+      </div>
+      <!-- End last navbar section -->
+      <div class="navbar__hamburger">
+        <span class="top-bun"></span>
+        <span class="stuffing"></span>
+        <span class="bottom-bun"></span>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    
+    <!-- Start Hero Section -->
+    <section id="start" class="hero">  
+      <div class="hero__content">
+        <div class="cursor"></div>
+        <div class="shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
         </div>
-        <div class="navbar__mobile">
-          <ul class="navbar__list">
-            <li class="navbar__item">
-              <a class="navbar__link underline" href="#start">Inicio</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link underline" href="#about">Acerca de mi</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link underline" href="#work">Portafolio</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link underline" href="#contact">Contacto</a>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="navbar__last">
-          <ul class="navbar__language">
-            <li class="language__item">
-              <a href="#" class="navbar__link underline">ENG</a>
-            </li>
-            <div class="language__separator"></div>
-            <li class="language__item language__item--light">
-              <a href="#" class="navbar__link strong underline">ESP</a>
-            </li>
-          </ul>
-          <button class="switch" id="switch">
-            <span><i class="fas fa-sun"></i></span>
-            <span><i class="fas fa-moon"></i></span>
-          </button>
-        </div>
-        <div class="navbar__menu-btn">
-          <div class="navbar__burger"></div>
-        </div>
-      </nav>
-    </header>
-    <main class="main">
-      <!-- Start Hero Section -->
-      <section id="start" class="hero">
-        <div class="hero__content animate__animated animate__bounceInLeft">
           <h1 class="hero__title">
             <span class="hero__p1">Hola, me llamo</span>
             <span class="hero__h1">Nader Ahmad</span>
-            <span class="hero__text"></span>
-            <span class="cursor">_</span>
           </h1>
-          <div class="hero__content-footer">
-            <a href="#contact" class="btn"
-              ><span class="btn__text">Contáctame</span></a
-            >
-            <div class="hero__social">
-              <a
-                href="https://github.com/naderahmad"
-                target="_blank"
-                rel="noopener"
-                ><i class="hero__icon fab fa-github-square"></i></a>
-              <a
-                href="https://www.linkedin.com/in/naderahmad/"
-                target="_blank"
-                rel="noopener"
-                ><i class="hero__icon fab fa-linkedin"></i></a>
-              <a
-                href="https://twitter.com/NaderAhmad"
-                target="_blank"
-                rel="noopener"
-                ><i class="hero__icon fab fa-twitter-square"></i></a>
-            </div>
+        <div class="hero__content-footer">
+          <a href="#contact" class="btn"><span class="btn__text">Contáctame</span></a>
+          <div class="hero__social">
+            <a href="https://github.com/naderahmad" target="_blank" rel="noopener"><i
+                class="hero__icon fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/naderahmad/" target="_blank" rel="noopener"><i
+                class="hero__icon fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/NaderAhmad" target="_blank" rel="noopener"><i
+                class="hero__icon fab fa-twitter-square"></i></a>
           </div>
         </div>
-        <div class="hero__bg animate__animated animate__fadeIn">
-          <div class="circle1"></div>
-          <div class="circle2"></div>
-          <div class="circle3"></div>
-        </div>
-        <div class="scroll">
-          <span></span>
-        </div>
-      </section>
-      <!-- End Hero Section -->
-      <!-- Start About Section -->
-      <section class="about" id="about">
-        <div class="about__content">
-          <h2
-            class="about__title-cont"
-          >
+      </div>
+      <div class="hero__bg animate__animated animate__fadeIn">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="circle3"></div>
+      </div>
+      <div class="scroll">
+        <span></span>
+      </div>
+    </section>
+    <!-- End Hero Section -->
+    <!-- Start About Section -->
+    <section class="about" id="about">
+      <div class="about__content">
+        <h2 class="about__title-cont">
           <span class="work__box"></span>
           <span class="work__title">Acerca de mi</span>
           <span class="cursor">_</span>
-          </h2>
-          <p
-            class="about__p"
-          >
-          🖖🏻 Bienvenido. Soy <strong>Frontend Developer</strong> e <strong>Ingeniero en informática</strong> 💻. Mi pasión es crear y desarrollar         
-          </p>
-          <div
-            class="about__btn"
-          >
-            <a
-              href="cv.pdf"
-              target="_blank"
-              rel="noopener"
-              class="btn btn--about"
-              ><span class="btn__text">Descargar CV</span></a
-            >
+        </h2>
+        <p class="about__p">
+          🖖🏻 Bienvenido. Soy <strong>Frontend Developer</strong> e <strong>Ingeniero en informática</strong> 💻. Mi
+          pasión es crear y desarrollar
+        </p>
+        <div class="about__btn">
+          <a href="cv.pdf" target="_blank" rel="noopener" class="btn btn--about"><span class="btn__text">Descargar
+              CV</span></a>
+        </div>
+      </div>
+      <!-- PROGRESS BAR HTML -->
+      <div class="skills">
+        <div class="skills__item">HTML5 / CSS3</div>
+        <div class="skills__item">JavaScript</div>
+        <div class="skills__item">Bootstrap</div>
+        <div class="skills__item">Wordpress</div>
+        <div class="skills__item">SASS</div>
+        <div class="skills__item">BEM</div>
+        <div class="skills__item">Git & Github</div>
+        <div class="skills__item">Adobe XD</div>
+        <div class="skills__item">Photoshop</div>
+        <div class="skills__item">Figma</div>
+      </div>
+    </section>
+    <!-- End About Section -->
+    <!-- Start Work Section -->
+    <section class="work" id="work">
+      <div class="work__content">
+        <h2 class="work_title-cont">
+          <span class="work__box"></span>
+          <span class="work__title">Portafolio</span>
+          <span class="cursor">_</span>
+        </h2>
+        <!-- Card 01 -->
+        <div class="card card-1">
+          <img src="./assets/images/doge-view.png" alt="screenshot website dogecoin" class="card__img">
+          <div class="card__content">
+            <h2 class="card__title">Astra Group<br><span class="card__span">One Page</span></h2>
+            <p class="card__p">Diseño y desarrollo de web oficial para empresa chilena ASTRA Group.</p>
+            <a href="https://astragroup.cl" target="_blank" rel="noopener" class="btn">Visitar</a>
           </div>
         </div>
-        <!-- PROGRESS BAR HTML -->
-        <div
-          class="skills"
-        >
-          <div class="skills__item">HTML5 / CSS3</div>
-          <div class="skills__item">JavaScript</div>
-          <div class="skills__item">Bootstrap</div>
-          <div class="skills__item">Wordpress</div>
-          <div class="skills__item">SASS</div>
-          <div class="skills__item">BEM</div>
-          <div class="skills__item">Git & Github</div>
-          <div class="skills__item">Adobe XD</div>
-          <div class="skills__item">Photoshop</div>
-          <div class="skills__item">Figma</div>
-        </div>
-      </section>
-      <!-- End About Section -->
-      <!-- Start Work Section -->
-      <section class="work" id="work">
-        <div class="work__content">
-          <h2 class="work_title-cont">
-            <span class="work__box"></span>
-            <span class="work__title">Portafolio</span>
-            <span class="cursor">_</span>
-          </h2>
-			<!-- Card 01 -->
-			<div class="card card-1">
-				<img src="./assets/images/doge-view.png" alt="screenshot website dogecoin" class="card__img">
-				<div class="card__content">
-					<h2 class="card__title">Astra Group<br><span class="card__span">One Page</span></h2>
-					<p class="card__p">Diseño y desarrollo de web oficial para empresa chilena ASTRA Group.</p>
-					<a href="https://astragroup.cl" target="_blank" rel="noopener" class="btn">Visitar</a>
-				</div>
-			</div>
-			<!-- Card 02 -->
-			<div class="card card-2">
-					<img src="./assets/images/well.png" alt="screenshot website Codewell project" class="card__img">
-				<div class="card__content">
-					<h2 class="card__title">Proyecto Codewell <br><span class="card__span">Landing Page</span></h2>
-					<p class="card__p">Desarrollo de una Landing page como desafio de la plataforma Codewell utilizando HTML5, CSS3 y diseño responsivo.</p>
-					<a href="https://naderahmad.github.io/spense/" target="_blank" rel="noopener" class="btn">Visualizar</a>
-				</div>
-			</div>
-			<!-- Card 03 -->
-			<div class="card card-3">
-				<img src="./assets/images/batatabit.png" alt="screenshot website Batatabit platzi project" class="card__img">
-				<div class="card__content">
-					<h2 class="card__title">Proyecto Platzi Batatabit
-            <br><span class="card__span">Landing Page</span></h2>
-					<p class="card__p">Proyecto final del curso "Responsive Design: Maquetación Mobile First" de Platzi.</p>
-					<a href="https://naderahmad.github.io/Platzi-BatataBit/" target="_blank" rel="noopener" class="btn">Visualizar</a>
-				</div>
-			</div>
-		</div>
-      </section>
-      <!-- End Work Section -->
-      <!-- Start Contact Section -->
-      <section class="contact" id="contact">
-        <div class="contact__container">
-          <div class="contact__title-cont">
-            <h2 class="contact__title">¿Quieres Ponerte en Contacto?</h2>
-            <div class="contact__socials">
-              <a href="https://wa.me/+584121907784" target="_blank"
-              rel="noopener"><i class="contact__icon fab fa-whatsapp-square"></i></a>
-              <a href="https://www.linkedin.com/in/naderahmad" target="_blank"
-              rel="noopener"><i class="contact__icon fab fa-linkedin"></i></a>
-              <a href="https://twitter.com/NaderAhmad" target="_blank"
-              rel="noopener"><i class="contact__icon fab fa-twitter-square"></i></a>
-            </div>
+        <!-- Card 02 -->
+        <div class="card card-2">
+          <img src="./assets/images/well.png" alt="screenshot website Codewell project" class="card__img">
+          <div class="card__content">
+            <h2 class="card__title">Proyecto Codewell <br><span class="card__span">Landing Page</span></h2>
+            <p class="card__p">Desarrollo de una Landing page como desafio de la plataforma Codewell utilizando HTML5,
+              CSS3 y diseño responsivo.</p>
+            <a href="https://naderahmad.github.io/spense/" target="_blank" rel="noopener" class="btn">Visualizar</a>
           </div>
-          <div class="contact__form">
-            <form action="#">
-              <div class="contact__s1">
-                <label class="contact__label" for="fname">Nombre</label>
+        </div>
+        <!-- Card 03 -->
+        <div class="card card-3">
+          <img src="./assets/images/batatabit.png" alt="screenshot website Batatabit platzi project" class="card__img">
+          <div class="card__content">
+            <h2 class="card__title">Proyecto Platzi Batatabit
+              <br><span class="card__span">Landing Page</span>
+            </h2>
+            <p class="card__p">Proyecto final del curso "Responsive Design: Maquetación Mobile First" de Platzi.</p>
+            <a href="https://naderahmad.github.io/Platzi-BatataBit/" target="_blank" rel="noopener"
+              class="btn">Visualizar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Work Section -->
+    <!-- Start Contact Section -->
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__title-cont">
+          <h2 class="contact__title">¿Quieres Ponerte en Contacto?</h2>
+          <div class="contact__socials">
+            <a href="https://wa.me/+584121907784" target="_blank" rel="noopener"><i
+                class="contact__icon fab fa-whatsapp-square"></i></a>
+            <a href="https://www.linkedin.com/in/naderahmad" target="_blank" rel="noopener"><i
+                class="contact__icon fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/NaderAhmad" target="_blank" rel="noopener"><i
+                class="contact__icon fab fa-twitter-square"></i></a>
+          </div>
+        </div>
+        <div class="contact__form">
+          <form action="#">
+            <div class="contact__s1">
+              <label class="contact__label" for="fname">Nombre</label>
               <input class="contact__input" type="text" name="fname" id="fname" placeholder="Ingresa tu nombre">
               <label class="contact__label" for="fname">Correo Electrónico</label>
-              <input class="contact__input" type="email" name="femail" id="femail" placeholder="Ingresa tu correo electrónico">
-              </div>
-              <label class="contact__label" for="fname">Mensaje</label>
-              <textarea class="contact__input contact__input--textarea" name="fmessage" id="fmessage" maxlength="5000" placeholder="Ingresa tu mensaje"></textarea>
-              <div class="contact__btn">
-                <button class="btn" type="submit">Enviar</button>
-              </div>
-            </form>
-          </div>
+              <input class="contact__input" type="email" name="femail" id="femail"
+                placeholder="Ingresa tu correo electrónico">
+            </div>
+            <label class="contact__label" for="fname">Mensaje</label>
+            <textarea class="contact__input contact__input--textarea" name="fmessage" id="fmessage" maxlength="5000"
+              placeholder="Ingresa tu mensaje"></textarea>
+            <div class="contact__btn">
+              <button class="btn" type="submit">Enviar</button>
+            </div>
+          </form>
         </div>
-      </section>
-      <!-- End Contact Section -->
-      <!-- Start Footer -->
-      <footer class="footer">
-        <div class="footer__socials">
-          <img src="./assets/images/logo-color.png" alt="logo nader ahmad marca colors" class="footer__logo">
-          <div class="footer__links">
-            <a href="https://github.com/naderahmad"
-            target="_blank"
-            rel="noopener" class="footer__item">GitHub</a>
-            <a href="https://www.linkedin.com/in/naderahmad"
-            target="_blank"
-            rel="noopener" class="footer__item">LinkedIn</a>
-            <a href="#about" class="footer__item">Acerca de</a>
-            <a href="#contact" class="footer__item">Contacto</a>
-          </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Start Footer -->
+    <footer class="footer">
+      <div class="footer__socials">
+        <img src="./assets/images/logo-color.png" alt="logo nader ahmad marca colors" class="footer__logo">
+        <div class="footer__links">
+          <a href="https://github.com/naderahmad" target="_blank" rel="noopener" class="footer__item">GitHub</a>
+          <a href="https://www.linkedin.com/in/naderahmad" target="_blank" rel="noopener"
+            class="footer__item">LinkedIn</a>
+          <a href="#about" class="footer__item">Acerca de</a>
+          <a href="#contact" class="footer__item">Contacto</a>
         </div>
-        <div class="footer__text">
-          <p class="footer__p">Desarrollado con ❤️ por Nader Ahmad © 2021.</p>
-        </div>
-      </footer>
-      <!-- End Footer -->
-    </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/EasePack.min.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"></script>
-    <script src="./assets/js/app.js"></script>
-  </body>
+      </div>
+      <div class="footer__text">
+        <p class="footer__p">Desarrollado con ❤️ por Nader Ahmad © 2021.</p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+  <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
